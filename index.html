@@ -1,54 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.js"></script>
-<link rel="preload" href="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.wasm" as="fetch" crossOrigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 
-  <style>
-    .loading {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    }
-
-    .loader {
-      border: 8px solid #f3f3f3;
-      border-radius: 50%;
-      border-top: 4px solid #000000;
-      border-right: 4px solid #959595;
-      border-bottom: 4px solid #090909;
-      border-left: 4px solid #090909;
-      width: 60px !important;
-      height: 60px !important;
-      -webkit-animation: spin 2s linear infinite;
-      animation: spin 2s linear infinite;
-    }
-
-    @-webkit-keyframes spin {
-      0% {
-        -webkit-transform: rotate(0deg);
-      }
-      100% {
-        -webkit-transform: rotate(360deg);
-      }
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-</style>
+  <script src="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.js"></script>
+  <link rel="preload" href="https://unpkg.com/canvaskit-wasm@0.33.0/bin/canvaskit.wasm" as="fetch" crossOrigin="anonymous">
 
   <base href="./">
 
@@ -70,24 +26,20 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '1453973816';
+    var serviceWorkerVersion = '4239138842';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 <body>
-    <!-- First time loading -->
-    <div class="loading">
-      <div class="loader"></div>
+  <!-- Code for Splash Screen  -->
+  <div class="splash">
+    <div class="content">
+      <img src="hasib-splash.png" class="center" style="width: 200px;" />
+      <div class="spinner"></div>
+    </div>
   </div>
 
-  <!-- Ensure first time loading progress is gone after app loads -->
-  <script>
-      window.addEventListener("flutter-first-frame", function() {
-          var element = document.getElementsByClassName("loading");
-          element[0].parentNode.removeChild(element[0]);
-      });
-  </script>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
