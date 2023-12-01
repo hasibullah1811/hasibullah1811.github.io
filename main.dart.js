@@ -55357,7 +55357,7 @@ A.Cw.prototype={
 I(a){var s=null,r=$.fB(),q=t.p
 return A.bQ(A.a([new A.aj(B.zX,A.bQ(A.a([B.Gn,B.dJ,A.ba("hasib.mobiledev",s,s,r.e0(24),s,s)],q),B.w,B.x,B.y),s),new A.aj(B.zW,A.bQ(A.a([new A.aj(B.a0,A.cN(!1,!0,A.bQ(A.a([A.ba("Download CV",s,s,r.Ex(1.4),s,s),B.jt,B.AL],q),B.w,B.aF,B.y),s,!0,s,s,s,s,s,s,s,s,s,new A.T7(),s),s)],q),B.w,B.aF,B.y),s)],q),B.w,B.aF,B.y)}}
 A.T7.prototype={
-$0(){$.ex().eo("open",["https://hasibullah1811.github.io/hasib_nov28%5Bresume.pdf"])},
+$0(){$.ex().eo("open",["https://hasibullah1811.github.io/hasib_resume.pdf"])},
 $S:0}
 A.be.prototype={
 am(){return new A.IZ(B.o)}}
